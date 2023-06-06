@@ -64,14 +64,14 @@
             </div>-->
         </div>
 
-        <form  action="email.php"  method="POST" class="formulario column column--50">
+        <form  action="enviar.php"  method="POST" class="formulario column column--50">
 
             <label for="" class="formulario__label">Nombre:</label>
-            <input type="text" class="formulario__input-txt" name="nombre" required>
+            <input title="nombre" type="text" class="formulario__input-txt" name="nombre" required>
             <label for="" class="formulario__label">Correo:</label>
-            <input type="text" class="formulario__input-txt" name="correo" required>
+            <input title="correo" type="text" class="formulario__input-txt" name="correo" required>
             <label for="" class="formulario__label">Mensaje:</label>
-            <textarea name="mensaje" id="" cols="30" rows="10" class="formulario__textarea" required></textarea>
+            <textarea title="mensaje" name="mensaje" id="" cols="30" rows="10" class="formulario__textarea" required></textarea>
             <input type="submit" class="btn formulario__btn" value="Enviar">
         </form>
     </div>

@@ -10,9 +10,9 @@ $body = "Nombre: " . $nombre .  "<br>Correo: " . $correo . "<br>Mensaje: " . $me
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'phpmailer/PHPMailer/src/Exception.php';
-require 'phpmailer/PHPMailer/src/PHPMailer.php';
-require 'phpmailer/PHPMailer/src/SMTP.php';
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
 
  
 
@@ -25,15 +25,15 @@ try {
     //Server settings
     $mail->SMTPDebug = 0 ;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'andreatrebin@gmail.com';                     //SMTP username
-    $mail->Password   = 'zmmtyqmxggbiwely';                               //SMTP password
-    $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
-    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Username   = 'consultas@cocinacasera.website';                     //SMTP username
+    $mail->Password   = 'Andrea0376#';                               //SMTP password
+    $mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('andreatrebin@gmail.com', 'Mailer');
+    $mail->setFrom('consultas@cocinacasera.website', 'Mailer');
     $mail->addAddress('consultas@cocinacasera.website', 'Mailer');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
