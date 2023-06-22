@@ -142,6 +142,21 @@ background-color:rgb(222, 223, 185) ;
     font-weight: bold;
  }
 
+ #btnflecha {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 3rem;
+    height: 3rem;
+    color: bisque;
+    border-radius: 30%;
+    background: #535869;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer
+  }
+
+
 a {
     padding: 10px;
     text-decoration: none;
